@@ -456,33 +456,77 @@ footer .logo img{height:72px;}
   line-height:1;
 }
 .core-item.open .core-sym{transform:rotate(45deg);}
-.core-a{max-height:0;overflow:hidden;transition:max-height .28s ease;}
-.core-a ul{
-  list-style:none;
-  margin:0;
-  padding:0 4px 28px 218px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px 40px;
+.core-a{max-height:0;overflow:hidden;transition:max-height .32s ease;}
+.core-detail{
+  padding:0 4px 30px 218px;
+  max-width:760px;
 }
-.core-a li{
-  font-size:0.96rem;
-  color:var(--slate);
-  padding-left:18px;
+.core-detail h4{
+  font-family:'Inter',sans-serif;
+  font-size:0.82rem;
+  font-weight:600;
+  color:var(--navy-mid);
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  margin:0 0 10px;
   position:relative;
+  display:inline-block;
 }
-.core-a li::before{
+.core-detail h4::before{
   content:"";
   position:absolute;
-  left:0;top:11px;
-  width:7px;height:1px;
+  left:-16px;top:4px;
+  width:7px;height:7px;
+  border-radius:50%;
   background:var(--silver);
+}
+.core-detail p{
+  color:var(--slate);
+  font-size:0.98rem;
+  line-height:1.7;
+  margin:0;
+}
+.core-detail-full{max-width:none;padding-bottom:34px;}
+.core-bullets{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px 32px;
+}
+.core-bullets li{
+  display:flex;
+  align-items:flex-start;
+  gap:11px;
+  font-size:0.95rem;
+  color:var(--slate);
+  line-height:1.5;
+  background:var(--paper-tint);
+  border:1px solid var(--silver-line);
+  border-radius:3px;
+  padding:12px 14px;
+}
+.core-bullets .ci{
+  flex-shrink:0;
+  width:19px;height:19px;
+  border-radius:50%;
+  background:var(--navy);
+  color:#FFFFFF;
+  font-size:0.62rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:1px;
 }
 @media (max-width:900px){
   .core-q{grid-template-columns:1fr auto;gap:6px 16px;padding:22px 2px;}
   .core-name{font-size:1.25rem;min-width:0;grid-column:1;}
   .core-lede{grid-column:1;font-size:0.92rem;}
   .core-sym{grid-column:2;grid-row:1;}
+  .core-detail{padding:0 2px 24px 20px;max-width:none;}
+  .core-detail-full{padding-bottom:26px;}
+  .core-bullets{grid-template-columns:1fr;}
   .core-a ul{grid-template-columns:1fr;padding:0 2px 22px 2px;}
 }
 
