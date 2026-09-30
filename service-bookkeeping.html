@@ -16,15 +16,17 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Bookkeeping | Strawberry Hill Accounting">
 <meta name="twitter:description" content="Accurate, current books. Every other financial decision you make depends on them, whether or not you think about it that way.">
-<meta name="theme-color" content="#13294B">
+<meta name="theme-color" content="#F4F6F8">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="pages.css">
+<script>document.documentElement.className+=" js";</script>
 </head>
-<body>
+<body class="theme">
 <a href="#main" class="skip-link">Skip to content</a>
 
 <header class="site">
@@ -34,8 +36,19 @@
       <span class="logo-txt"><span class="logo-name">Strawberry Hill</span><span class="logo-sub">ACCOUNTING</span></span>
     </a>
     <div class="nav-links" id="navLinks">
-      <a href="services.html" class="active" aria-current="page">Services</a>
-      <a href="plans.html">Plans</a>
+      <div class="nav-dd active">
+        <button class="nav-dd-btn" aria-expanded="false" aria-haspopup="true">Services <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5L5 7l3.5-3.5"/></svg></button>
+        <div class="nav-dd-menu"><div class="nav-dd-inner">
+          <a href="services.html" class="nav-all">All services <span aria-hidden="true">&rarr;</span></a>
+          <div class="nav-col-h">Year-Round Services</div>
+          <a href="service-bookkeeping.html">Bookkeeping &amp; Accounting</a><a href="service-payroll.html">Payroll</a><a href="service-fpa.html">Financial Planning &amp; Analysis</a><a href="service-fractional-cfo.html">Fractional CFO</a>
+          <details class="nav-sub"><summary>Special situations</summary><div class="nav-sub-list"><a href="service-readiness.html">Growth &amp; Transition Readiness</a><a href="service-valuations.html">Business Valuations</a><a href="service-business-formation.html">Business Formation</a></div></details>
+        </div></div>
+      </div>
+      <div class="nav-dd">
+        <button class="nav-dd-btn" aria-expanded="false" aria-haspopup="true">Industries <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5L5 7l3.5-3.5"/></svg></button>
+        <div class="nav-dd-menu"><div class="nav-dd-inner"><a href="industry-home-services.html">Essential Home Services</a><a href="industry-building-products.html">Building Products &amp; Trades</a><a href="industry-manufacturing.html">Manufacturing &amp; Distribution</a><a href="industry-professional-services.html">Professional &amp; Business Services</a><a href="industry-retail-restaurants.html">Retail &amp; Restaurants</a></div></div>
+      </div>
       <a href="about.html">About</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html" class="nav-cta">Start a Conversation</a>
@@ -45,177 +58,101 @@
 </header>
 
 <main id="main">
-
-<div class="page-head">
-  <div class="wrap">
-    <a href="services.html" class="backlink">&larr; Back to Services</a>
-    <div class="eyebrow">Core Service</div>
-    <h1>Bookkeeping</h1>
-    <p>Accurate, current books. Every other financial decision you make depends on them, whether or not you think about it that way.</p>
-  </div>
-</div>
-
-<section>
-  <div class="wrap">
-    <div class="detail-block">
-      <h2>What it is</h2>
+<section class="sd-hero grad">
+  <div class="hwrap">
+    <a href="services.html" class="sd-back">&larr; All services</a>
+    <div class="sd-hero-grid">
       <div>
-      <p>Bookkeeping is the record of every dollar moving in and out of your business, categorized correctly and reconciled against your actual bank and credit card statements.</p>
-      <p>It matters more than most owners realize because everything else sits on top of it. Pricing decisions, whether you can afford to hire, what you pay yourself, whether a lender will approve you, what a buyer would pay: all of it comes from your books. If they're behind or miscategorized, you're making those calls on a guess, and you usually won't know you were wrong until it's expensive.</p>
-      <p>Behind on your books is a normal place to start. It's one of the most common reasons owners reach out.</p>
+        <div class="sd-eyebrow">Core Service</div>
+        <h1>Bookkeeping</h1>
+        <p class="lede">Accurate, current books. Every other financial decision you make depends on them, whether or not you think about it that way.</p>
+        <div class="sd-cta"><a href="contact.html" class="btn-pill">Start a Conversation <span aria-hidden="true">&rarr;</span></a><a href="#included" class="h-link">See what&rsquo;s included <span class="arr" aria-hidden="true">&darr;</span></a></div>
+      </div>
+      <aside class="sd-glass"><div class="sd-glass-h">Where it fits</div><p>Bookkeeping is the foundation of our ongoing work together. Payroll and advisory both sit on top of it, and it is where most new relationships begin.</p></aside>
+    </div>
+  </div>
+</section>
+
+<section class="sd-what">
+  <div class="hwrap">
+    <div class="sd-what-grid">
+      <div class="pg-kicker rv">What it is</div>
+      <div class="sd-what-text rv d1"><p>Bookkeeping is the record of every dollar moving in and out of your business, categorized correctly and reconciled against your actual bank and credit card statements.</p><p>It matters more than most owners realize because everything else sits on top of it. Pricing decisions, whether you can afford to hire, what you pay yourself, whether a lender will approve you, what a buyer would pay: all of it comes from your books. If they're behind or miscategorized, you're making those calls on a guess, and you usually won't know you were wrong until it's expensive.</p><p>Behind on your books is a normal place to start. It's one of the most common reasons owners reach out.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sd-detail" id="included">
+  <div class="hwrap">
+    <div class="sd-two">
+      <div class="sd-card who rv">
+        <div class="sd-card-h">Who it&rsquo;s for</div>
+        <ul><li>Owners currently doing their own books and running out of time</li><li>Businesses whose books are behind, messy, or were never set up right</li><li>Owners who can't get a clear read on whether they made money last month</li><li>Businesses preparing for a loan, an investor, or a sale</li><li>Anyone who finds year-end difficult due to the reconstruction work involved</li></ul>
+      </div>
+      <div class="sd-card inc grad rv d1">
+        <div class="sd-card-h">What&rsquo;s included</div>
+        <ul><li>Monthly reconciliation of bank and credit card accounts</li><li>Transaction categorization and clean chart of accounts</li><li>Profit and loss, balance sheet, and cash flow statements</li><li>Catch-up and cleanup work to get current</li><li>QuickBooks Online setup, migration, training, and support</li><li>Accounts receivable and payable monitoring</li><li>Year-end packages ready for your outside preparer</li></ul>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="detail-block">
-      <h2>Who it's for</h2>
-      <ul class="detail-list">
-        <li>Owners currently doing their own books and running out of time</li>
-        <li>Businesses whose books are behind, messy, or were never set up right</li>
-        <li>Owners who can't get a clear read on whether they made money last month</li>
-        <li>Businesses preparing for a loan, an investor, or a sale</li>
-        <li>Anyone who finds tax season difficult due to the reconstruction work involved</li>
-      </ul>
-    </div>
+<section class="svc-projects grad sd-rel" aria-labelledby="rel-h">
+  <div class="hwrap">
+    <div class="svc-pj-head rv"><div class="pg-kicker" style="color:#9FB7DA;">Related services</div><h2 id="rel-h">Often paired with this.</h2></div>
+    <div class="pj-grid rv"><a href="service-payroll.html" class="pj"><span class="t">Payroll</span><span class="d">Your team paid correctly and on time</span><svg class="arr" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 20h24M22 10l10 10-10 10"/></svg></a><a href="service-fpa.html" class="pj"><span class="t">Financial Planning &amp; Analysis</span><span class="d">Forecasting, budgeting, and scenarios</span><svg class="arr" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 20h24M22 10l10 10-10 10"/></svg></a><a href="service-fractional-cfo.html" class="pj"><span class="t">Fractional CFO</span><span class="d">Senior financial leadership, part-time</span><svg class="arr" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 20h24M22 10l10 10-10 10"/></svg></a></div>
+  </div>
+</section>
 
-    <div class="detail-block">
-      <h2>What's included</h2>
-      <ul class="detail-list">
-        <li>Monthly reconciliation of bank and credit card accounts</li>
-        <li>Transaction categorization and clean chart of accounts</li>
-        <li>Profit and loss, balance sheet, and cash flow statements</li>
-        <li>Catch-up and cleanup work to get current</li>
-        <li>QuickBooks Online setup, migration, training, and support</li>
-        <li>Accounts receivable and payable monitoring</li>
-        <li>Year-end packages ready for tax filing</li>
-      </ul>
-    </div>
-
-    <div class="detail-block">
-      <h2>Where it fits</h2>
-      <div><p>Bookkeeping is part of the Books &amp; Payroll add-on, which layers onto either base tax membership, and is included in the Full Advisory Partner plan.</p></div>
-    </div>
-
-    <div class="detail-cta">
-      <a href="plans.html" class="btn-primary">See Membership Plans</a>
-      <a href="contact.html" class="btn-outline">Talk to Us</a>
-      <a href="services.html" style="color:var(--navy-mid);font-size:0.92rem;font-weight:500;">All services</a>
+<section class="h-cta on-light" aria-labelledby="cta-h">
+  <div class="hwrap">
+    <div class="h-cta-grid">
+      <h2 id="cta-h" class="rv">Ready to take the next step?</h2>
+      <div class="rv d1">
+        <p>Get in touch. We&rsquo;d love to learn more about your business and how we can help.</p>
+        <a href="contact.html" class="h-link">Start a Conversation <span class="arr" aria-hidden="true">&rarr;</span></a>
+      </div>
     </div>
   </div>
 </section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="index.html" class="logo">
+<footer class="sf">
+  <div class="sf-wrap">
+    <div class="sf-grid">
+      <div class="sf-brand">
+        <a href="index.html" class="logo" aria-label="Strawberry Hill Accounting home">
           <img src="mark-light.png" alt="">
           <span class="logo-txt"><span class="logo-name">Strawberry Hill</span><span class="logo-sub">ACCOUNTING</span></span>
         </a>
-        <div class="footer-services">Accounting <span>|</span> Bookkeeping <span>|</span> Payroll <span>|</span> Tax <span>|</span> Finance</div>
+        <p>Outsourced accounting and FP&amp;A for founder- and family-owned businesses. Serving the Midwest.</p>
+        <a href="contact.html" class="sf-btn">Start a Conversation <span aria-hidden="true">&rarr;</span></a>
       </div>
-      <div class="footer-links">
-        <a href="services.html">Services</a>
-        <a href="plans.html">Plans</a>
-        <a href="about.html">About</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
+      <nav class="sf-col sf-help" aria-label="Helpful links">
+        <h3>Helpful links</h3>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#who-we-serve">Industries</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="sf-col sf-contact">
+        <h3>Contact</h3>
+        <div class="sf-reach">
+          <a href="mailto:atrikona@strawberryhillaccounting.com">atrikona@strawberryhillaccounting.com</a>
+          <a href="tel:+19132153117">(913) 215-3117</a>
+          <a href="https://www.linkedin.com/company/strawberry-hill-accounting" class="sf-in" target="_blank" rel="noopener" aria-label="Strawberry Hill Accounting on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.54h.05c.53-1 1.83-2.04 3.77-2.04 4.03 0 4.78 2.65 4.78 6.1V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.59V21h-4z"/></svg>LinkedIn</a>
+        </div>
       </div>
     </div>
-    <div class="disclaimer">
-      Strawberry Hill Accounting LLC is based in Kansas City, Missouri, and provides tax preparation, bookkeeping, payroll, and advisory services to founder-led and family-owned businesses throughout the Midwest. Federal tax preparation services are provided under a valid IRS Preparer Tax Identification Number (PTIN). Content on this site is informational only and does not constitute tax, legal, or accounting advice. Always confirm decisions specific to your situation directly with our team.
+    <div class="sf-legal">
+      <p class="sf-disc-text" id="sfDisc">Strawberry Hill Accounting LLC is based in Kansas City, Missouri, and provides bookkeeping, payroll, and advisory services to founder-led and family-owned businesses throughout the Midwest. Content on this site is informational only and does not constitute legal, financial, or accounting advice. Always confirm decisions specific to your situation directly with our team.</p>
+      <div class="sf-base"><span>&copy; 2026 Strawberry Hill Accounting LLC</span><span class="sf-base-r"><button type="button" class="sf-disc-btn" id="sfDiscBtn" aria-expanded="false" aria-controls="sfDisc">Disclosures</button><a href="#main" class="sf-top">Back to top <span aria-hidden="true">&uarr;</span></a></span></div>
     </div>
-    <div class="copyright">&copy; 2026 Strawberry Hill Accounting LLC. All rights reserved.</div>
   </div>
 </footer>
 
-<script>
-  var mt = document.getElementById('menuToggle');
-  if(mt){ mt.addEventListener('click', function(){
-    var nl = document.getElementById('navLinks');
-    nl.classList.toggle('open');
-    mt.setAttribute('aria-expanded', nl.classList.contains('open'));
-  }); }
-
-  document.querySelectorAll('.faq-item').forEach(function(item){
-    var q = item.querySelector('.faq-q');
-    var a = item.querySelector('.faq-a');
-    q.addEventListener('click', function(){
-      var isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(function(o){
-        o.classList.remove('open');
-        o.querySelector('.faq-q').setAttribute('aria-expanded','false');
-        o.querySelector('.faq-a').style.maxHeight = null;
-      });
-      if(!isOpen){
-        item.classList.add('open');
-        q.setAttribute('aria-expanded','true');
-        a.style.maxHeight = a.scrollHeight + 'px';
-      }
-    });
-  });
-
-  // Preselect the plan/service from ?plan= or ?service= in the URL
-  (function(){
-    var sel = document.getElementById('interest');
-    if(!sel) return;
-    var params = new URLSearchParams(window.location.search);
-    var want = params.get('plan') || params.get('service');
-    if(!want) return;
-    var map = {
-      individual:'Individual Tax', business:'Business & Entity Tax',
-      books:'Books & Payroll', advisory:'Full Advisory Partner',
-      readiness:'Growth & Transition Readiness'
-    };
-    var target = map[want] || want;
-    for(var i=0;i<sel.options.length;i++){
-      if(sel.options[i].text.toLowerCase() === target.toLowerCase()){ sel.selectedIndex = i; return; }
-    }
-    for(var j=0;j<sel.options.length;j++){
-      if(sel.options[j].text === 'A different project'){ sel.selectedIndex = j; }
-    }
-  })();
-
-  document.querySelectorAll('.core-item').forEach(function(item){
-    var q = item.querySelector('.core-q');
-    var a = item.querySelector('.core-a');
-    q.addEventListener('click', function(){
-      var isOpen = item.classList.contains('open');
-      document.querySelectorAll('.core-item').forEach(function(o){
-        o.classList.remove('open');
-        o.querySelector('.core-q').setAttribute('aria-expanded','false');
-        o.querySelector('.core-a').style.maxHeight = null;
-      });
-      if(!isOpen){
-        item.classList.add('open');
-        q.setAttribute('aria-expanded','true');
-        a.style.maxHeight = a.scrollHeight + 'px';
-      }
-    });
-  });
-
-  var f = document.getElementById('interestForm');
-  if(f){
-    f.addEventListener('submit', function(e){
-      e.preventDefault();
-      var btn = document.getElementById('submitBtn');
-      var ok = document.getElementById('formConfirm');
-      var bad = document.getElementById('formError');
-      ok.classList.remove('show'); bad.classList.remove('show');
-      // If the form endpoint hasn't been configured yet, just show confirmation.
-      if(f.action.indexOf('YOUR_FORM_ID') !== -1){
-        ok.classList.add('show'); f.reset(); return;
-      }
-      btn.disabled = true; btn.textContent = 'Sending...';
-      fetch(f.action, {
-        method:'POST', body:new FormData(f), headers:{'Accept':'application/json'}
-      }).then(function(r){
-        if(r.ok){ ok.classList.add('show'); f.reset(); }
-        else { bad.classList.add('show'); }
-      }).catch(function(){ bad.classList.add('show'); })
-      .finally(function(){ btn.disabled = false; btn.textContent = 'Send'; });
-    });
-  }
-</script>
+<script src="site.js"></script>
 </body>
 </html>

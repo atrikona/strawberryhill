@@ -15,7 +15,7 @@
 html{scroll-behavior:smooth;}
 body{
   margin:0;
-  font-family:'Inter',-apple-system,sans-serif;
+  font-family:'DM Sans',-apple-system,sans-serif;
   color:var(--ink);
   background:var(--paper);
   line-height:1.65;
@@ -152,7 +152,7 @@ section{padding:76px 0;}
 .faq-item{border-top:1px solid var(--silver-line);}
 .faq-item:last-child{border-bottom:1px solid var(--silver-line);}
 .faq-q{width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-size:1.01rem;font-family:'Source Serif 4',serif;color:var(--navy);}
-.faq-q .sym{font-size:1.3rem;color:var(--silver);flex-shrink:0;font-family:'Inter',sans-serif;transition:transform .2s;}
+.faq-q .sym{font-size:1.3rem;color:var(--silver);flex-shrink:0;font-family:'DM Sans',sans-serif;transition:transform .2s;}
 .faq-item.open .faq-q .sym{transform:rotate(45deg);}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;}
 .faq-a p{color:var(--slate);padding-bottom:20px;max-width:68ch;font-size:0.95rem;margin:0;}
@@ -197,7 +197,7 @@ form.interest{background:var(--paper);color:var(--ink);padding:34px;border-radiu
 .field.full{grid-column:1/-1;}
 label{font-size:0.82rem;color:var(--slate);margin-bottom:6px;}
 label .opt{color:var(--silver);font-weight:400;}
-input,select,textarea{font-family:'Inter',sans-serif;font-size:0.94rem;padding:11px 12px;border:1px solid var(--silver-line);border-radius:2px;background:#FFF;color:var(--ink);}
+input,select,textarea{font-family:'DM Sans',sans-serif;font-size:0.94rem;padding:11px 12px;border:1px solid var(--silver-line);border-radius:2px;background:#FFF;color:var(--ink);}
 input:focus,select:focus,textarea:focus{outline:2px solid var(--navy-mid);outline-offset:1px;}
 textarea{resize:vertical;min-height:80px;}
 .submit-row{margin-top:6px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
@@ -377,7 +377,7 @@ footer .logo img{height:36px;}
   grid-template-columns:repeat(5,1fr);
 }
 .services-strip li{
-  font-family:'Inter',sans-serif;
+  font-family:'DM Sans',sans-serif;
   font-size:0.9rem;
   font-weight:600;
   letter-spacing:0.13em;
@@ -444,13 +444,13 @@ footer .logo img{height:72px;}
   white-space:nowrap;
 }
 .core-lede{
-  font-family:'Inter',sans-serif;
+  font-family:'DM Sans',sans-serif;
   font-size:0.98rem;
   color:var(--slate);
   line-height:1.5;
 }
 .core-sym{
-  font-family:'Inter',sans-serif;
+  font-family:'DM Sans',sans-serif;
   font-size:1.5rem;
   color:var(--silver);
   transition:transform .2s;
@@ -470,7 +470,7 @@ footer .logo img{height:72px;}
 }
 .core-col{display:grid;grid-template-rows:auto 1fr;}
 .core-col h4{
-  font-family:'Inter',sans-serif;
+  font-family:'DM Sans',sans-serif;
   font-size:0.72rem;font-weight:600;
   color:var(--navy-mid);
   letter-spacing:0.1em;text-transform:uppercase;
@@ -485,7 +485,7 @@ footer .logo img{height:72px;}
 /* included */
 .core-inc{padding:0 4px 34px 218px;}
 .core-inc h4{
-  font-family:'Inter',sans-serif;
+  font-family:'DM Sans',sans-serif;
   font-size:0.72rem;font-weight:600;
   color:var(--navy-mid);
   letter-spacing:0.1em;text-transform:uppercase;
@@ -511,7 +511,7 @@ footer .logo img{height:72px;}
 .core-icon svg{width:40px;height:40px;display:block;}
 .core-tag{
   display:inline-block;margin-left:12px;
-  font-family:'Inter',sans-serif;font-size:0.6rem;font-weight:600;
+  font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:600;
   letter-spacing:0.12em;text-transform:uppercase;
   padding:4px 9px;border-radius:2px;vertical-align:middle;
 }
@@ -536,7 +536,7 @@ footer .logo img{height:72px;}
 .footer-brand{display:flex;flex-direction:column;gap:14px;}
 footer .logo img{height:56px;}
 .footer-services{
-  font-family:'Inter',sans-serif;
+  font-family:'DM Sans',sans-serif;
   font-size:0.72rem;
   font-weight:600;
   letter-spacing:0.16em;
@@ -562,7 +562,7 @@ footer .logo img{height:56px;}
   font-size:1.42rem;font-weight:600;color:var(--navy);letter-spacing:-0.02em;
 }
 .logo-sub{
-  font-family:'Inter',sans-serif;
+  font-family:'DM Sans',sans-serif;
   font-size:0.62rem;font-weight:600;color:var(--slate);
   letter-spacing:0.34em;margin-top:5px;
 }
@@ -593,7 +593,7 @@ footer .logo-sub{color:var(--silver);}
 }
 .claim span{color:var(--silver);}
 .claim-sub{
-  font-family:'Inter',sans-serif;
+  font-family:'DM Sans',sans-serif;
   font-size:1rem;
   color:#B7C1CB;
   max-width:52ch;

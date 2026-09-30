@@ -4,27 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services | Strawberry Hill Accounting</title>
-<meta name="description" content="Accounting, bookkeeping, payroll, tax, and finance for founder-led and family-owned businesses across the Midwest.">
+<meta name="description" content="Accounting, bookkeeping, payroll, and finance for founder-led and family-owned businesses across the Midwest.">
 <link rel="canonical" href="https://www.strawberryhillaccounting.com/services.html">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Strawberry Hill Accounting">
 <meta property="og:title" content="Services | Strawberry Hill Accounting">
-<meta property="og:description" content="Accounting, bookkeeping, payroll, tax, and finance for founder-led and family-owned businesses across the Midwest.">
+<meta property="og:description" content="Accounting, bookkeeping, payroll, and finance for founder-led and family-owned businesses across the Midwest.">
 <meta property="og:url" content="https://www.strawberryhillaccounting.com/services.html">
 <meta property="og:image" content="https://www.strawberryhillaccounting.com/social-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Services | Strawberry Hill Accounting">
-<meta name="twitter:description" content="Accounting, bookkeeping, payroll, tax, and finance for founder-led and family-owned businesses across the Midwest.">
-<meta name="theme-color" content="#13294B">
+<meta name="twitter:description" content="Accounting, bookkeeping, payroll, and finance for founder-led and family-owned businesses across the Midwest.">
+<meta name="theme-color" content="#F4F6F8">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="pages.css">
+<script>document.documentElement.className+=" js";</script>
 </head>
-<body>
+<body class="theme">
 <a href="#main" class="skip-link">Skip to content</a>
 
 <header class="site">
@@ -34,8 +36,19 @@
       <span class="logo-txt"><span class="logo-name">Strawberry Hill</span><span class="logo-sub">ACCOUNTING</span></span>
     </a>
     <div class="nav-links" id="navLinks">
-      <a href="services.html" class="active" aria-current="page">Services</a>
-      <a href="plans.html">Plans</a>
+      <div class="nav-dd active">
+        <button class="nav-dd-btn" aria-expanded="false" aria-haspopup="true">Services <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5L5 7l3.5-3.5"/></svg></button>
+        <div class="nav-dd-menu"><div class="nav-dd-inner">
+          <a href="services.html" class="nav-all">All services <span aria-hidden="true">&rarr;</span></a>
+          <div class="nav-col-h">Year-Round Services</div>
+          <a href="service-bookkeeping.html">Bookkeeping &amp; Accounting</a><a href="service-payroll.html">Payroll</a><a href="service-fpa.html">Financial Planning &amp; Analysis</a><a href="service-fractional-cfo.html">Fractional CFO</a>
+          <details class="nav-sub"><summary>Special situations</summary><div class="nav-sub-list"><a href="service-readiness.html">Growth &amp; Transition Readiness</a><a href="service-valuations.html">Business Valuations</a><a href="service-business-formation.html">Business Formation</a></div></details>
+        </div></div>
+      </div>
+      <div class="nav-dd">
+        <button class="nav-dd-btn" aria-expanded="false" aria-haspopup="true">Industries <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5L5 7l3.5-3.5"/></svg></button>
+        <div class="nav-dd-menu"><div class="nav-dd-inner"><a href="industry-home-services.html">Essential Home Services</a><a href="industry-building-products.html">Building Products &amp; Trades</a><a href="industry-manufacturing.html">Manufacturing &amp; Distribution</a><a href="industry-professional-services.html">Professional &amp; Business Services</a><a href="industry-retail-restaurants.html">Retail &amp; Restaurants</a></div></div>
+      </div>
       <a href="about.html">About</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html" class="nav-cta">Start a Conversation</a>
@@ -45,297 +58,130 @@
 </header>
 
 <main id="main">
+<section class="svc-hero grad">
+  <div class="hwrap">
+    <div class="pg-eyebrow" style="color:#9FB7DA;">Services</div>
+    <h1>Take the financial work off your shoulders.</h1>
+    <p class="lede">So you can do what you do best: running the business. Bookkeeping to finance, handled by people who know your numbers.</p>
+    <div class="svc-hero-cta"><a href="#explore" class="btn-pill">Explore our services <span aria-hidden="true">&darr;</span></a><a href="contact.html" class="h-link">Start a Conversation <span class="arr" aria-hidden="true">&rarr;</span></a></div>
+  </div>
+</section>
 
-<div class="page-head">
-  <div class="wrap">
-    <div class="eyebrow">What we do</div>
-    <h1>Accounting and finance, handled.</h1>
-    <p>Accounting, bookkeeping, payroll, and tax keep the business accurate and current. Finance is what turns those numbers into a plan: someone looking at where the business is headed, not just where it's been.</p>
+<section class="svc-explore" id="explore" aria-labelledby="ex-h">
+  <div class="hwrap">
+    <div class="pg-head2 rv"><div class="pg-kicker">Year-round services</div><h2 id="ex-h">Explore our services.</h2></div>
+    <div class="svc-tool rv">
+      <div class="svc-tabs" role="tablist">
+<button type="button" class="svc-tab on" data-i="0" role="tab" aria-selected="true"><span class="n">Bookkeeping</span><span class="l">Every transaction categorized and reconciled, every month.</span></button>
+<button type="button" class="svc-tab" data-i="1" role="tab" aria-selected="false"><span class="n">Accounting</span><span class="l">Financial statements you can actually trust and use.</span></button>
+<button type="button" class="svc-tab" data-i="2" role="tab" aria-selected="false"><span class="n">Payroll</span><span class="l">Your team paid right, with the filings handled.</span></button>
+<button type="button" class="svc-tab" data-i="3" role="tab" aria-selected="false"><span class="n">Finance</span><span class="l">Where the business is headed, not just where it's been.</span><span class="svc-badge">Where we stand apart</span></button>
+      </div>
+      <div class="svc-panels grad">
+<div class="svc-panel on" data-i="0" role="tabpanel">
+  <h3>Bookkeeping</h3>
+  <p class="svc-big">No more screens of uncategorized transactions. Books close on schedule, and closing the books stops being a reconstruction project.</p>
+  <div class="svc-cols">
+    <ul><li>Bank and credit card reconciliation</li><li>Transaction categorization and coding</li><li>Accounts receivable and payable tracking</li><li>QuickBooks Online setup and support</li><li>Catch-up work if you're behind</li></ul>
+    <div class="svc-side"><div class="svc-label2">Why it matters</div><p class="svc-why">This is the foundation everything else is built on. Current books cost far less to maintain than late books cost to repair.</p><div class="svc-links"><a href="service-bookkeeping.html" class="h-link sm">Bookkeeping details <span class="arr" aria-hidden="true">&rarr;</span></a></div></div>
   </div>
 </div>
-
-<section>
-  <div class="wrap">
-    <div class="core-list">
-      <div class="core-item">
-        <button class="core-q" aria-expanded="false">
-          <span class="core-icon"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
-<rect x="6" y="5" width="28" height="30" rx="2" stroke="#0F2340" stroke-width="1.6"/>
-<line x1="11" y1="13" x2="29" y2="13" stroke="#9FAAB4" stroke-width="1.6"/>
-<line x1="11" y1="20" x2="29" y2="20" stroke="#9FAAB4" stroke-width="1.6"/>
-<line x1="11" y1="27" x2="22" y2="27" stroke="#9FAAB4" stroke-width="1.6"/>
-<circle cx="27" cy="27" r="4" fill="#0F2340"/>
-<path d="M25.4 27l1.1 1.2 2.1-2.3" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></span>
-          <span class="core-name">Bookkeeping<span class="core-tag tag-base">The base</span></span>
-          <span class="core-lede">Every transaction categorized and reconciled, every month.</span>
-          <span class="core-sym">+</span>
-        </button>
-        <div class="core-a">
-          <div class="core-cols">
-            <div class="core-col"><h4>What it is</h4><p>Transaction-level work: purchases, deposits and transfers coded correctly and matched against what your bank actually shows.</p></div>
-            <div class="core-col"><h4>What you get</h4><p>No more screens of uncategorized transactions. Books close on schedule, and tax season stops being a reconstruction project.</p></div>
-            <div class="core-col"><h4>Why it matters</h4><p>This is the foundation everything else is built on. Current books cost far less to maintain than late books cost to repair.</p></div>
-          </div>
-          <div class="core-inc">
-            <h4>Included</h4>
-            <ul class="core-bullets">
-            <li><span class="ci">&#10003;</span>Bank and credit card reconciliation</li>
-            <li><span class="ci">&#10003;</span>Transaction categorization and coding</li>
-            <li><span class="ci">&#10003;</span>Accounts receivable and payable tracking</li>
-            <li><span class="ci">&#10003;</span>QuickBooks Online setup and support</li>
-            <li><span class="ci">&#10003;</span>Catch-up work if you're behind</li>
-            </ul>
-          </div>
-        </div>
+<div class="svc-panel" data-i="1" role="tabpanel">
+  <h3>Accounting</h3>
+  <p class="svc-big">A P&amp;L, balance sheet, and cash flow statement every month, in plain terms. If a bank asks for numbers, you send them same-day.</p>
+  <div class="svc-cols">
+    <ul><li>Monthly close on a set schedule</li><li>Clean, business-specific chart of accounts</li><li>P&amp;L, balance sheet, cash flow statements</li><li>Year-end packages ready for filing</li></ul>
+    <div class="svc-side"><div class="svc-label2">Why it matters</div><p class="svc-why">Pricing, hiring, and financing decisions all get read off these statements, whether you realize it or not.</p><div class="svc-links"><a href="service-bookkeeping.html" class="h-link sm">Learn more <span class="arr" aria-hidden="true">&rarr;</span></a></div></div>
+  </div>
+</div>
+<div class="svc-panel" data-i="2" role="tabpanel">
+  <h3>Payroll</h3>
+  <p class="svc-big">Payroll runs on schedule without you tracking deadlines. W-2s and 1099s go out in January without a scramble.</p>
+  <div class="svc-cols">
+    <ul><li>Processing on your schedule</li><li>Federal, state, and local tax deposits</li><li>Quarterly and annual filings</li><li>W-2 and 1099 preparation</li><li>New hire reporting</li></ul>
+    <div class="svc-side"><div class="svc-label2">Why it matters</div><p class="svc-why">Payroll is where a small error becomes a government problem. Penalties and notices cost far more than doing it right.</p><div class="svc-links"><a href="service-payroll.html" class="h-link sm">Payroll details <span class="arr" aria-hidden="true">&rarr;</span></a></div></div>
+  </div>
+</div>
+<div class="svc-panel" data-i="3" role="tabpanel">
+  <div class="svc-apart"><strong>This is where we&rsquo;re different.</strong> Most CPA firms and AI tools look backward. Looking ahead is the work they aren&rsquo;t built to provide.</div><h3>Finance</h3>
+  <p class="svc-big">You see a tight month 90 days out, not the week payroll is due. “Can we afford this hire” gets a real answer.</p>
+  <div class="svc-cols">
+    <ul><li>Rolling cash flow forecasting</li><li>Annual budget and variance tracking</li><li>Custom KPIs tied to your goals</li><li>Scenario modeling for big decisions</li><li>Scheduled strategy sessions</li></ul>
+    <div class="svc-side"><div class="svc-label2">Why it matters</div><p class="svc-why">A business that only looks backward gets surprised. Knowing where you&rsquo;re headed lets you make the big decisions on your terms, before they&rsquo;re forced.</p><div class="svc-links"><a href="service-fpa.html" class="h-link sm">Financial planning &amp; analysis <span class="arr" aria-hidden="true">&rarr;</span></a><a href="service-fractional-cfo.html" class="h-link sm">Fractional CFO <span class="arr" aria-hidden="true">&rarr;</span></a></div></div>
+  </div>
+</div>
       </div>
-      <div class="core-item">
-        <button class="core-q" aria-expanded="false">
-          <span class="core-icon"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
-<path d="M9 34V17M17 34V10M25 34V22M33 34V6" stroke="#0F2340" stroke-width="2.4" stroke-linecap="round"/>
-<line x1="5" y1="34" x2="36" y2="34" stroke="#9FAAB4" stroke-width="1.6" stroke-linecap="round"/>
-</svg></span>
-          <span class="core-name">Accounting<span class="core-tag tag-add">Add-on</span></span>
-          <span class="core-lede">Financial statements you can actually trust and use.</span>
-          <span class="core-sym">+</span>
-        </button>
-        <div class="core-a">
-          <div class="core-cols">
-            <div class="core-col"><h4>What it is</h4><p>The reporting layer on top of your books: a real monthly close, a clean chart of accounts, and statements built to a consistent standard.</p></div>
-            <div class="core-col"><h4>What you get</h4><p>A P&amp;L, balance sheet, and cash flow statement every month, in plain terms. If a bank asks for numbers, you send them same-day.</p></div>
-            <div class="core-col"><h4>Why it matters</h4><p>Pricing, hiring, and financing decisions all get read off these statements, whether you realize it or not.</p></div>
-          </div>
-          <div class="core-inc">
-            <h4>Included</h4>
-            <ul class="core-bullets">
-            <li><span class="ci">&#10003;</span>Monthly close on a set schedule</li>
-            <li><span class="ci">&#10003;</span>Clean, business-specific chart of accounts</li>
-            <li><span class="ci">&#10003;</span>P&amp;L, balance sheet, cash flow statements</li>
-            <li><span class="ci">&#10003;</span>Year-end packages ready for filing</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="core-item">
-        <button class="core-q" aria-expanded="false">
-          <span class="core-icon"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
-<circle cx="15" cy="14" r="5" stroke="#0F2340" stroke-width="1.7"/>
-<path d="M6 32c0-5 4-8 9-8s9 3 9 8" stroke="#0F2340" stroke-width="1.7" stroke-linecap="round"/>
-<circle cx="28" cy="16" r="3.6" stroke="#9FAAB4" stroke-width="1.6"/>
-<path d="M23 32c0-4 2.4-6.4 5.4-6.4S34 28 34 32" stroke="#9FAAB4" stroke-width="1.6" stroke-linecap="round"/>
-</svg></span>
-          <span class="core-name">Payroll<span class="core-tag tag-add">Add-on</span></span>
-          <span class="core-lede">Your team paid right, with the filings handled.</span>
-          <span class="core-sym">+</span>
-        </button>
-        <div class="core-a">
-          <div class="core-cols">
-            <div class="core-col"><h4>What it is</h4><p>Calculating pay, withholding correctly, making tax deposits, and filing the paperwork tied to every pay period.</p></div>
-            <div class="core-col"><h4>What you get</h4><p>Payroll runs on schedule without you tracking deadlines. W-2s and 1099s go out in January without a scramble.</p></div>
-            <div class="core-col"><h4>Why it matters</h4><p>Payroll is where a small error becomes a government problem. Penalties and notices cost far more than doing it right.</p></div>
-          </div>
-          <div class="core-inc">
-            <h4>Included</h4>
-            <ul class="core-bullets">
-            <li><span class="ci">&#10003;</span>Processing on your schedule</li>
-            <li><span class="ci">&#10003;</span>Federal, state, and local tax deposits</li>
-            <li><span class="ci">&#10003;</span>Quarterly and annual filings</li>
-            <li><span class="ci">&#10003;</span>W-2 and 1099 preparation</li>
-            <li><span class="ci">&#10003;</span>New hire reporting</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="core-item">
-        <button class="core-q" aria-expanded="false">
-          <span class="core-icon"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
-<path d="M9 6h16l7 7v21H9z" stroke="#0F2340" stroke-width="1.6" stroke-linejoin="round"/>
-<path d="M25 6v7h7" stroke="#9FAAB4" stroke-width="1.6" stroke-linejoin="round"/>
-<line x1="14" y1="29" x2="27" y2="18" stroke="#0F2340" stroke-width="1.6" stroke-linecap="round"/>
-<circle cx="15.5" cy="20.5" r="2.4" stroke="#9FAAB4" stroke-width="1.5"/>
-<circle cx="25.5" cy="27.5" r="2.4" stroke="#9FAAB4" stroke-width="1.5"/>
-</svg></span>
-          <span class="core-name">Tax<span class="core-tag tag-add">Add-on</span></span>
-          <span class="core-lede">Returns filed, and planning done while it still counts.</span>
-          <span class="core-sym">+</span>
-        </button>
-        <div class="core-a">
-          <div class="core-cols">
-            <div class="core-col"><h4>What it is</h4><p>Two things: accurate returns filed each year, and decisions made during the year that change what you owe.</p></div>
-            <div class="core-col"><h4>What you get</h4><p>Filing is routine because your books are already current. And when a big decision comes up, you ask before you act.</p></div>
-            <div class="core-col"><h4>Why it matters</h4><p>By the time a return is filed, nearly every chance to change that number is gone. Planning has to happen earlier.</p></div>
-          </div>
-          <div class="core-inc">
-            <h4>Included</h4>
-            <ul class="core-bullets">
-            <li><span class="ci">&#10003;</span>Federal and state return preparation</li>
-            <li><span class="ci">&#10003;</span>Business entity returns and K-1s</li>
-            <li><span class="ci">&#10003;</span>Estimated quarterly payment tracking</li>
-            <li><span class="ci">&#10003;</span>Entity structure and owner compensation</li>
-            <li><span class="ci">&#10003;</span>Multi-state filings</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="core-item">
-        <button class="core-q" aria-expanded="false">
-          <span class="core-icon"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
-<path d="M6 27l8-8 6 5 12-13" stroke="#0F2340" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M25 11h7v7" stroke="#0F2340" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<line x1="6" y1="34" x2="34" y2="34" stroke="#9FAAB4" stroke-width="1.6" stroke-linecap="round"/>
-</svg></span>
-          <span class="core-name">Finance<span class="core-tag tag-adv">Advisory</span></span>
-          <span class="core-lede">Where the business is headed, not just where it's been.</span>
-          <span class="core-sym">+</span>
-        </button>
-        <div class="core-a">
-          <div class="core-cols">
-            <div class="core-col"><h4>What it is</h4><p>A rolling cash flow forecast, a budget you're held to, and the few numbers that show whether the business is getting healthier.</p></div>
-            <div class="core-col"><h4>What you get</h4><p>You see a tight month 90 days out, not the week payroll is due. &ldquo;Can we afford this hire&rdquo; gets a real answer.</p></div>
-            <div class="core-col"><h4>Why it matters</h4><p>This requires a different discipline entirely, closer to investment banking than compliance accounting.</p></div>
-          </div>
-          <div class="core-inc">
-            <h4>Included</h4>
-            <ul class="core-bullets">
-            <li><span class="ci">&#10003;</span>Rolling cash flow forecasting</li>
-            <li><span class="ci">&#10003;</span>Annual budget and variance tracking</li>
-            <li><span class="ci">&#10003;</span>Custom KPIs tied to your goals</li>
-            <li><span class="ci">&#10003;</span>Scenario modeling for big decisions</li>
-            <li><span class="ci">&#10003;</span>Scheduled strategy sessions</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="detail-cta">
-      <a href="plans.html" class="btn-primary">View Membership Plans</a>
-      <a href="contact.html" class="btn-outline">Talk to Us</a>
     </div>
   </div>
 </section>
-<div class="cta-strip">
-  <div class="wrap">
-    <div>
-      <h3>Not sure where you fit?</h3>
-      <p>Tell us about your business and we'll point you to the right starting place.</p>
-    </div>
-    <a href="contact.html" class="btn-primary">Start a Conversation</a>
-  </div>
-</div></main>
 
-<footer>
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="index.html" class="logo">
+<section class="svc-statement">
+  <div class="hwrap">
+    <p class="rv">Not every business needs every service.<br><em>Tell us what&rsquo;s on your plate, and we&rsquo;ll take it on.</em></p>
+    <div class="h-btns rv d1"><a href="contact.html" class="h-btn">Start a Conversation <span class="arr" aria-hidden="true">&rarr;</span></a></div>
+  </div>
+</section>
+
+<section class="svc-projects grad" aria-labelledby="pj-h">
+  <div class="hwrap">
+    <div class="svc-pj-head rv">
+      <div class="pg-kicker" style="color:#9FB7DA;">Special projects &amp; situations</div>
+      <h2 id="pj-h">Something specific going on?</h2>
+      <p>Some financial work isn&rsquo;t ongoing. It comes up around a decision or an event, and it&rsquo;s scoped and priced as its own project.</p>
+    </div>
+    <div class="pj-grid rv"><a href="service-readiness.html" class="pj"><span class="t">Growth &amp; Transition Readiness</span><span class="d">Getting prepared to raise, scale, or sell</span><svg class="arr" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 20h24M22 10l10 10-10 10"/></svg></a><a href="service-valuations.html" class="pj"><span class="t">Business Valuations</span><span class="d">What your business is worth, and why</span><svg class="arr" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 20h24M22 10l10 10-10 10"/></svg></a><a href="service-business-formation.html" class="pj"><span class="t">Business Formation</span><span class="d">Entity selection and setup</span><svg class="arr" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 20h24M22 10l10 10-10 10"/></svg></a></div>
+  </div>
+</section>
+
+<section class="h-cta on-light" aria-labelledby="cta-h">
+  <div class="hwrap">
+    <div class="h-cta-grid">
+      <h2 id="cta-h" class="rv">Ready to take the next step?</h2>
+      <div class="rv d1">
+        <p>Get in touch. We&rsquo;d love to learn more about your business and how we can help.</p>
+        <a href="contact.html" class="h-link">Start a Conversation <span class="arr" aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="sf">
+  <div class="sf-wrap">
+    <div class="sf-grid">
+      <div class="sf-brand">
+        <a href="index.html" class="logo" aria-label="Strawberry Hill Accounting home">
           <img src="mark-light.png" alt="">
           <span class="logo-txt"><span class="logo-name">Strawberry Hill</span><span class="logo-sub">ACCOUNTING</span></span>
         </a>
-        <div class="footer-services">Accounting <span>|</span> Bookkeeping <span>|</span> Payroll <span>|</span> Tax <span>|</span> Finance</div>
+        <p>Outsourced accounting and FP&amp;A for founder- and family-owned businesses. Serving the Midwest.</p>
+        <a href="contact.html" class="sf-btn">Start a Conversation <span aria-hidden="true">&rarr;</span></a>
       </div>
-      <div class="footer-links">
-        <a href="services.html">Services</a>
-        <a href="plans.html">Plans</a>
-        <a href="about.html">About</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
+      <nav class="sf-col sf-help" aria-label="Helpful links">
+        <h3>Helpful links</h3>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#who-we-serve">Industries</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="sf-col sf-contact">
+        <h3>Contact</h3>
+        <div class="sf-reach">
+          <a href="mailto:atrikona@strawberryhillaccounting.com">atrikona@strawberryhillaccounting.com</a>
+          <a href="tel:+19132153117">(913) 215-3117</a>
+          <a href="https://www.linkedin.com/company/strawberry-hill-accounting" class="sf-in" target="_blank" rel="noopener" aria-label="Strawberry Hill Accounting on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.54h.05c.53-1 1.83-2.04 3.77-2.04 4.03 0 4.78 2.65 4.78 6.1V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.59V21h-4z"/></svg>LinkedIn</a>
+        </div>
       </div>
     </div>
-    <div class="disclaimer">
-      Strawberry Hill Accounting LLC is based in Kansas City, Missouri, and provides tax preparation, bookkeeping, payroll, and advisory services to founder-led and family-owned businesses throughout the Midwest. Federal tax preparation services are provided under a valid IRS Preparer Tax Identification Number (PTIN). Content on this site is informational only and does not constitute tax, legal, or accounting advice. Always confirm decisions specific to your situation directly with our team.
+    <div class="sf-legal">
+      <p class="sf-disc-text" id="sfDisc">Strawberry Hill Accounting LLC is based in Kansas City, Missouri, and provides bookkeeping, payroll, and advisory services to founder-led and family-owned businesses throughout the Midwest. Content on this site is informational only and does not constitute legal, financial, or accounting advice. Always confirm decisions specific to your situation directly with our team.</p>
+      <div class="sf-base"><span>&copy; 2026 Strawberry Hill Accounting LLC</span><span class="sf-base-r"><button type="button" class="sf-disc-btn" id="sfDiscBtn" aria-expanded="false" aria-controls="sfDisc">Disclosures</button><a href="#main" class="sf-top">Back to top <span aria-hidden="true">&uarr;</span></a></span></div>
     </div>
-    <div class="copyright">&copy; 2026 Strawberry Hill Accounting LLC. All rights reserved.</div>
   </div>
 </footer>
 
-<script>
-  var mt = document.getElementById('menuToggle');
-  if(mt){ mt.addEventListener('click', function(){
-    var nl = document.getElementById('navLinks');
-    nl.classList.toggle('open');
-    mt.setAttribute('aria-expanded', nl.classList.contains('open'));
-  }); }
-
-  document.querySelectorAll('.faq-item').forEach(function(item){
-    var q = item.querySelector('.faq-q');
-    var a = item.querySelector('.faq-a');
-    q.addEventListener('click', function(){
-      var isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(function(o){
-        o.classList.remove('open');
-        o.querySelector('.faq-q').setAttribute('aria-expanded','false');
-        o.querySelector('.faq-a').style.maxHeight = null;
-      });
-      if(!isOpen){
-        item.classList.add('open');
-        q.setAttribute('aria-expanded','true');
-        a.style.maxHeight = a.scrollHeight + 'px';
-      }
-    });
-  });
-
-  // Preselect the plan/service from ?plan= or ?service= in the URL
-  (function(){
-    var sel = document.getElementById('interest');
-    if(!sel) return;
-    var params = new URLSearchParams(window.location.search);
-    var want = params.get('plan') || params.get('service');
-    if(!want) return;
-    var map = {
-      individual:'Individual Tax', business:'Business & Entity Tax',
-      books:'Books & Payroll', advisory:'Full Advisory Partner',
-      readiness:'Growth & Transition Readiness'
-    };
-    var target = map[want] || want;
-    for(var i=0;i<sel.options.length;i++){
-      if(sel.options[i].text.toLowerCase() === target.toLowerCase()){ sel.selectedIndex = i; return; }
-    }
-    for(var j=0;j<sel.options.length;j++){
-      if(sel.options[j].text === 'A different project'){ sel.selectedIndex = j; }
-    }
-  })();
-
-  document.querySelectorAll('.core-item').forEach(function(item){
-    var q = item.querySelector('.core-q');
-    var a = item.querySelector('.core-a');
-    q.addEventListener('click', function(){
-      var isOpen = item.classList.contains('open');
-      document.querySelectorAll('.core-item').forEach(function(o){
-        o.classList.remove('open');
-        o.querySelector('.core-q').setAttribute('aria-expanded','false');
-        o.querySelector('.core-a').style.maxHeight = null;
-      });
-      if(!isOpen){
-        item.classList.add('open');
-        q.setAttribute('aria-expanded','true');
-        a.style.maxHeight = a.scrollHeight + 'px';
-      }
-    });
-  });
-
-  var f = document.getElementById('interestForm');
-  if(f){
-    f.addEventListener('submit', function(e){
-      e.preventDefault();
-      var btn = document.getElementById('submitBtn');
-      var ok = document.getElementById('formConfirm');
-      var bad = document.getElementById('formError');
-      ok.classList.remove('show'); bad.classList.remove('show');
-      // If the form endpoint hasn't been configured yet, just show confirmation.
-      if(f.action.indexOf('YOUR_FORM_ID') !== -1){
-        ok.classList.add('show'); f.reset(); return;
-      }
-      btn.disabled = true; btn.textContent = 'Sending...';
-      fetch(f.action, {
-        method:'POST', body:new FormData(f), headers:{'Accept':'application/json'}
-      }).then(function(r){
-        if(r.ok){ ok.classList.add('show'); f.reset(); }
-        else { bad.classList.add('show'); }
-      }).catch(function(){ bad.classList.add('show'); })
-      .finally(function(){ btn.disabled = false; btn.textContent = 'Send'; });
-    });
-  }
-</script>
+<script src="site.js"></script>
 </body>
 </html>
