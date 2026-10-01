@@ -219,7 +219,14 @@
       var bad = d.getElementById('formError');
       ok.classList.remove('show'); bad.classList.remove('show');
       // If the form endpoint hasn't been configured yet, just show confirmation.
-      if (f.action.indexOf('YOUR_FORM_ID') !== -1) { ok.classList.add('show'); f.reset(); return; }
+      if (f.action.indexOf('YOUR_FORM_ID') !== -1) {
+        var g = function (n) { var el = f.elements[n]; return el ? el.value.trim() : ''; };
+        var body = 'Name: ' + g('First name') + ' ' + g('Last name') + '\nBusiness: ' + g('Business') + '\nEmail: ' + g('email') + '\nPhone: ' + g('Phone') + '\nInterested in: ' + g('Interested in') + '\n\n' + g('Message');
+        var subj = 'Website inquiry from ' + g('Business');
+        window.location.href = 'mailto:atrikona@strawberryhillaccounting.com?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
+        ok.innerHTML = 'Your email app should open with your message ready to send. If it doesn&rsquo;t, email us at <a href="mailto:atrikona@strawberryhillaccounting.com">atrikona@strawberryhillaccounting.com</a>.';
+        ok.classList.add('show'); return;
+      }
       btn.disabled = true; btn.textContent = 'Sending...';
       fetch(f.action, { method: 'POST', body: new FormData(f), headers: { 'Accept': 'application/json' } })
         .then(function (r) { if (r.ok) { ok.classList.add('show'); f.reset(); } else { bad.classList.add('show'); } })
