@@ -20,15 +20,15 @@ sed -i '' 's|https://www.linkedin.com/|YOUR-LINKEDIN-URL|g' *.html
 ```
 
 ### Connect the contact form
-The form is built and styled but needs an endpoint to actually deliver submissions to you.
+The contact form sends through **FormSubmit** (formsubmit.co), which needs no account or key.
 
-1. Create a free account at **formspree.io**
-2. Create a new form; it gives you an ID like `xyzabcde`
-3. In `contact.html`, find `action="https://formspree.io/f/YOUR_FORM_ID"` and swap in your ID
+1. After the site is live, submit one test message through the form
+2. FormSubmit emails a one-time confirmation link to atrikona@strawberryhillaccounting.com (check spam)
+3. Click it. From then on every submission lands in that inbox
 
-Until you do this, the form shows the confirmation message but does not send anything. That is intentional so the site doesn't silently lose leads before it's wired up.
+Optional: after confirming, FormSubmit gives you a random alias address. Swap it into the `action` URL in `contact.html` so your email isn't visible in the page source.
 
-Alternatives to Formspree that work the same way: Basin, Web3Forms, Netlify Forms (free if you host on Netlify).
+Alternatives that work the same way: Web3Forms, Basin, Netlify Forms (free if you host on Netlify).
 
 ### Add a social share image
 Create a 1200x630px image and save it as `social-card.png` in this folder. This is what appears when someone shares a link on LinkedIn, Facebook, or text message. Without it, links share as plain text.
