@@ -26,7 +26,7 @@ The contact form sends through **FormSubmit** (formsubmit.co), which needs no ac
 2. FormSubmit emails a one-time confirmation link to atrikona@strawberryhillaccounting.com (check spam)
 3. Click it. From then on every submission lands in that inbox
 
-Optional: after confirming, FormSubmit gives you a random alias address. Swap it into the `action` URL in `contact.html` so your email isn't visible in the page source.
+The `action` URL in `contact.html` uses FormSubmit's random alias instead of the raw email address, so the address is not exposed in the page source.
 
 Alternatives that work the same way: Web3Forms, Basin, Netlify Forms (free if you host on Netlify).
 
