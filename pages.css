@@ -397,3 +397,22 @@ body.theme .ct-form select option{color:var(--charcoal);}
 body.theme .ct-form select:hover{border-bottom-color:var(--green);}
 
 body.theme .svc-badge + .svc-badge{margin-left:6px;}
+
+/* How the tiers fit together */
+body.theme .svc-fit{padding:100px 0 110px;background:#F4F6F8;border-top:1px solid var(--tan-line);}
+body.theme .fit-outer{margin-top:44px;border-radius:6px;padding:30px;background:linear-gradient(160deg,#0B2038 0%,#1A3866 100%);color:#FFF;box-shadow:0 18px 50px rgba(11,32,56,.18);}
+body.theme .fit-label{font-family:var(--serif);font-size:1.6rem;line-height:1.15;letter-spacing:-0.02em;}
+body.theme .fit-label span{display:block;margin-top:6px;font-family:'DM Sans',sans-serif;font-size:.86rem;letter-spacing:0;line-height:1.5;opacity:.78;}
+body.theme .fit-row{display:grid;grid-template-columns:2.3fr auto 1fr;gap:16px;align-items:stretch;margin-top:26px;}
+body.theme .fit-mid,body.theme .fit-adv{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);border-radius:6px;padding:24px;}
+body.theme .fit-mid .fit-label{font-size:1.35rem;}
+body.theme .fit-adv .fit-label{font-size:1.35rem;}
+body.theme .fit-tag{display:inline-block;margin-bottom:12px;padding:4px 12px;border-radius:999px;background:#F4F6F8;color:var(--green);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;}
+body.theme .fit-chips{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px;}
+body.theme .fit-chip{display:block;text-align:center;background:#FFF;color:var(--green);padding:14px 10px;border-radius:4px;font-size:.95rem;font-weight:500;text-decoration:none;transition:transform .2s;}
+body.theme .fit-chip:hover{transform:translateY(-2px);}
+body.theme .fit-chip.solo{margin-top:18px;}
+body.theme .fit-plus{display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:2rem;opacity:.8;}
+body.theme .fit-note{margin-top:22px;text-align:center;color:var(--muted);font-size:.95rem;}
+body.theme .fit-note a{color:var(--green);text-decoration:underline;text-underline-offset:3px;}
+@media(max-width:1000px){body.theme .svc-fit{padding:70px 0 80px;}body.theme .fit-row{grid-template-columns:1fr;}body.theme .fit-chips{grid-template-columns:1fr;}body.theme .fit-plus{padding:2px 0;}body.theme .fit-outer{padding:22px;}}
