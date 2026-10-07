@@ -133,19 +133,14 @@
 
 <section class="svc-fit" aria-labelledby="fit-h">
   <div class="hwrap">
-    <div class="pg-head2 rv"><div class="pg-kicker">How it fits together</div><h2 id="fit-h">Start with one piece, or bring it all together.</h2><p>Take only what you need. Bundling costs less than buying the pieces separately.</p></div>
-    <div class="fit2 rv">
-      <div class="fit2-cap">Choose a piece on its own</div>
-      <a href="service-bookkeeping.html" class="fit2-piece"><span class="t">Bookkeeping</span><span class="d">Books kept current and reconciled every month</span><span class="fit2-tag">Most recommended</span></a>
-      <a href="service-payroll.html" class="fit2-piece"><span class="t">Payroll</span><span class="d">Your team paid right, with the filings handled</span></a>
-      <a href="service-accounting.html" class="fit2-piece"><span class="t">Accounting</span><span class="d">The monthly close and financial statements</span></a>
-      <a href="service-fpa.html" class="fit2-piece"><span class="t">Advisory (FP&amp;A)</span><span class="d">Cash flow, KPIs, and a monthly review call</span><span class="fit2-tag">Recommended</span></a>
-      <div class="fit2-cap">Bundle three of them</div>
-      <a href="service-controller.html" class="fit2-bar ctl"><span class="t">Fractional Controller</span><span class="d">Bookkeeping + Payroll + Accounting, at a lower price than buying them separately</span><span class="fit2-tag">Most recommended</span></a>
-      <div class="fit2-cap">Or get all four</div>
-      <a href="service-fractional-cfo.html" class="fit2-bar cfo"><span class="t">Fractional CFO + Controller</span><span class="d">Bookkeeping + Payroll + Accounting + Advisory, in one engagement</span></a>
+    <div class="pg-head2 rv"><div class="pg-kicker">How it fits together</div><h2 id="fit-h">Start with one piece, or bring it all together.</h2><p>Hover over a layer to see who it&rsquo;s for and what you get. Bundles cost less than buying the pieces separately.</p></div>
+    <div class="fit3 rv" id="fit3">
+      <div class="fit3-viz">
+        <svg class="fit3-svg" viewBox="0 0 730 540" role="group" aria-label="How the services build on each other"><g class="fit3-layer" data-key="advisory" tabindex="0" role="button" aria-label="Advisory (FP&amp;A)"><polygon points="210.0,10 390.0,10 436.5,131 163.5,131" fill="#4C78B4"/><text x="300" y="68" class="ln">Advisory (FP&amp;A)</text><text x="300" y="92" class="ls">Looking ahead</text></g><g class="fit3-layer" data-key="accounting" tabindex="0" role="button" aria-label="Accounting"><polygon points="158.8,143 441.2,143 487.7,264 112.3,264" fill="#3A64A0"/><text x="300" y="202" class="ln">Accounting</text><text x="300" y="226" class="ls">The close and statements</text></g><g class="fit3-layer" data-key="payroll" tabindex="0" role="button" aria-label="Payroll"><polygon points="107.7,276 492.3,276 538.8,397 61.2,397" fill="#2A4F86"/><text x="300" y="334" class="ln">Payroll</text><text x="300" y="358" class="ls">Your team paid right</text></g><g class="fit3-layer" data-key="bookkeeping" tabindex="0" role="button" aria-label="Bookkeeping"><polygon points="56.5,409 543.5,409 590.0,530 10.0,530" fill="#1A3866"/><text x="300" y="468" class="ln">Bookkeeping</text><text x="300" y="492" class="ls">Books kept current</text></g><g class="fit3-br" data-key="controller" tabindex="0" role="button" aria-label="Fractional Controller"><path d="M620,143 L630,143 L630,530 L620,530" fill="none" stroke="#1A3866" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="616" y="143" width="52" height="387" fill="transparent"/><text x="652" y="336" transform="rotate(90 652 336)" class="bl" fill="#1A3866">Fractional Controller</text></g><g class="fit3-br" data-key="cfo" tabindex="0" role="button" aria-label="Fractional CFO + Controller"><path d="M684,10 L694,10 L694,530 L684,530" fill="none" stroke="#0B2038" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="680" y="10" width="52" height="520" fill="transparent"/><text x="716" y="270" transform="rotate(90 716 270)" class="bl" fill="#0B2038">Fractional CFO + Controller</text></g></svg>
+        <div class="fit3-pills" role="group" aria-label="Bundles"><button type="button" class="fit3-pill" data-key="controller">Fractional Controller</button><button type="button" class="fit3-pill" data-key="cfo">Fractional CFO + Controller</button></div>
+      </div>
+      <div class="fit3-card" id="fit3Card" aria-live="polite"></div>
     </div>
-    <p class="fit2-note rv">Not sure which fits? <a href="contact.html">Tell us what&rsquo;s on your plate</a> and we&rsquo;ll point you to the right one.</p>
   </div>
 </section>
 
@@ -210,5 +205,29 @@
 </footer>
 
 <script src="site.js"></script>
+<script>
+(function(){
+  var DATA={"bookkeeping": {"tag": "Most recommended", "title": "Bookkeeping", "best": "Owners doing their own books, or whose books are behind or messy.", "get": ["Bank and credit card reconciliation", "Transaction categorization and coding", "Accounts receivable and payable tracking", "QuickBooks Online setup and support"], "href": "service-bookkeeping.html", "cta": "Bookkeeping details"}, "payroll": {"tag": "", "title": "Payroll", "best": "Businesses with W-2 employees or regular 1099 contractors.", "get": ["Processing on your schedule", "Federal, state, and local tax deposits", "Quarterly and annual filings", "W-2 and 1099 preparation"], "href": "service-payroll.html", "cta": "Payroll details"}, "accounting": {"tag": "", "title": "Accounting", "best": "Businesses that already have a bookkeeper but no one closing the books.", "get": ["Monthly close on a set schedule", "P&amp;L, balance sheet, and cash flow statements", "Adjusting entries and account reviews", "Year-end packages ready for filing"], "href": "service-accounting.html", "cta": "Accounting details"}, "advisory": {"tag": "Recommended", "title": "Advisory (FP&amp;A)", "best": "Owners who want to see cash and big decisions coming, not just look back.", "get": ["Rolling cash flow forecasting", "Annual budget and variance tracking", "Custom KPIs tied to your goals", "Monthly review call"], "href": "service-fpa.html", "cta": "Advisory details"}, "controller": {"tag": "Most recommended", "title": "Fractional Controller", "best": "Owners who want the books, the close, and payroll handled by one team.", "get": ["Bookkeeping + Payroll + Accounting, bundled", "Priced below buying the three separately", "One team, one monthly rhythm"], "href": "service-controller.html", "cta": "Fractional Controller details"}, "cfo": {"tag": "", "title": "Fractional CFO + Controller", "best": "Owners ready for a complete finance department, for a fraction of the cost of building one.", "get": ["Everything in Fractional Controller", "Everything in Advisory (FP&amp;A)", "Regular leadership meetings on a set cadence", "Lender and investor reporting packages"], "href": "service-fractional-cfo.html", "cta": "Fractional CFO + Controller details"}}, GROUPS={"bookkeeping": ["bookkeeping"], "payroll": ["payroll"], "accounting": ["accounting"], "advisory": ["advisory"], "controller": ["bookkeeping", "payroll", "accounting"], "cfo": ["bookkeeping", "payroll", "accounting", "advisory"]};
+  var root=document.getElementById('fit3'); if(!root) return;
+  var card=document.getElementById('fit3Card');
+  var layers=root.querySelectorAll('.fit3-layer'), brs=root.querySelectorAll('.fit3-br'), pills=root.querySelectorAll('.fit3-pill');
+  function show(key){
+    var on=GROUPS[key]||[], d=DATA[key]; if(!d) return;
+    layers.forEach(function(l){var k=l.getAttribute('data-key'); var hit=on.indexOf(k)>-1; l.classList.toggle('on',hit); l.classList.toggle('dim',!hit);});
+    brs.forEach(function(b){b.classList.toggle('on',b.getAttribute('data-key')===key);});
+    pills.forEach(function(p){p.classList.toggle('on',p.getAttribute('data-key')===key);});
+    card.innerHTML=(d.tag?'<span class="fit3-tag">'+d.tag+'</span>':'')+'<h3>'+d.title+'</h3><div class="fit3-lab">Best for</div><p class="fit3-best">'+d.best+'</p><div class="fit3-lab">What you get</div><ul>'+d.get.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul><a class="h-link sm" href="'+d.href+'">'+d.cta+' <span class="arr" aria-hidden="true">&rarr;</span></a>';
+  }
+  [].forEach.call(root.querySelectorAll('[data-key]'),function(el){
+    var k=el.getAttribute('data-key');
+    el.addEventListener('mouseenter',function(){show(k);});
+    el.addEventListener('focus',function(){show(k);});
+    el.addEventListener('click',function(){show(k);});
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();show(k);}});
+  });
+  show('bookkeeping');
+})();
+</script>
+
 </body>
 </html>
