@@ -395,3 +395,5 @@ body.theme .ct-form select{cursor:pointer;}
 body.theme .ct-form select:invalid{color:var(--sage);}
 body.theme .ct-form select option{color:var(--charcoal);}
 body.theme .ct-form select:hover{border-bottom-color:var(--green);}
+
+body.theme .svc-badge + .svc-badge{margin-left:6px;}
