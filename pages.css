@@ -557,3 +557,24 @@ body.theme .svc-tab .svc-badge{padding:2px 8px;letter-spacing:.1em;}
 body.theme .svc-tool{min-height:440px;}
 }
 body.theme .fit3-layer.dim{opacity:.72;}
+
+body.theme .fit3-pick{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:0 0 22px;}
+body.theme .fit3-pick-l{color:rgba(255,255,255,.8);font-size:.92rem;}
+body.theme .fit3-inds{display:flex;flex-wrap:wrap;gap:8px;}
+body.theme .fit3-ind{font:inherit;font-size:.86rem;padding:8px 15px;border:1px solid rgba(255,255,255,.35);border-radius:999px;background:transparent;color:#fff;cursor:pointer;transition:background .2s,color .2s,border-color .2s;}
+body.theme .fit3-ind:hover{border-color:#fff;background:rgba(255,255,255,.1);}
+body.theme .fit3-ind.on{background:#fff;color:#16305A;border-color:#fff;}
+body.theme .fit3-ind:focus-visible{outline:2px solid #fff;outline-offset:2px;}
+
+body.theme .svc-fit{padding:34px 0 36px;}
+body.theme .svc-fit .pg-head2{margin-bottom:12px;}
+body.theme .fit3-pick{margin-bottom:16px;}
+body.theme .fit3-svg{max-width:600px;}
+body.theme .fit3-card{padding:22px 26px 20px;}
+@media(max-width:1000px){
+body.theme .fit3{grid-template-columns:1fr;gap:26px;}
+body.theme .fit3-svg{max-width:100%;}
+body.theme .fit3-layer .ln{font-size:25px;letter-spacing:.06em;}
+body.theme .fit3-card{padding:22px 20px;}
+body.theme .fit3-ind{font-size:.82rem;padding:7px 13px;}
+}
