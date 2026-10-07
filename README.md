@@ -74,7 +74,8 @@ Each article body is a series of `<h2>` sections with `<p>` paragraphs. Keep sec
 index.html                    Home, hero + four doorways
 services.html                 Service map (12 tiles, Core + Advisory)
   service-bookkeeping.html
-  service-full-service-accounting.html
+  service-accounting.html
+  service-controller.html
   service-payroll.html
   service-business-formation.html
   service-fpa.html
