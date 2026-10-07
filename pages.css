@@ -578,3 +578,16 @@ body.theme .fit3-layer .ln{font-size:25px;letter-spacing:.06em;}
 body.theme .fit3-card{padding:22px 20px;}
 body.theme .fit3-ind{font-size:.82rem;padding:7px 13px;}
 }
+
+/* stable hover: static hit areas, constant box height, badge spacing */
+body.theme .fit3-layer{pointer-events:none;}
+body.theme .fit3-hit{fill:transparent;pointer-events:all;cursor:pointer;}
+body.theme .fit3-tag{display:table;margin:0 0 12px;}
+body.theme .fit3-card h3{margin-top:0;}
+@media(min-width:1001px){
+body.theme .svc-panels{display:grid;min-height:0;}
+body.theme .svc-panel{grid-area:1/1;display:block;visibility:hidden;opacity:0;animation:none;align-self:center;}
+body.theme .svc-panel.on{visibility:visible;opacity:1;animation:svcFade .3s ease both;}
+}
+@keyframes svcFade{from{opacity:0}to{opacity:1}}
+@media(min-width:1001px){body.theme .fit3{align-items:start;}body.theme .fit3-card{min-height:420px;}}

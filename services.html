@@ -23,7 +23,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="site.css">
-<link rel="stylesheet" href="pages.css?v=20261007">
+<link rel="stylesheet" href="pages.css?v=20261007b">
 <script>document.documentElement.className+=" js";</script>
 </head>
 <body class="theme">
@@ -237,12 +237,23 @@ var SC={"home": {"label": "Home services", "who": "An HVAC company with a dozen 
   }
   [].forEach.call(root.querySelectorAll('[data-key]'),function(el){
     var k=el.getAttribute('data-key');
-    el.addEventListener('mouseenter',function(){show(k);});
+    if(!el.classList.contains('fit3-layer'))el.addEventListener('mouseenter',function(){show(k);});
     el.addEventListener('focus',function(){show(k);});
     el.addEventListener('click',function(){show(k);});
     el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();show(k);}});
   });
   [].forEach.call(document.querySelectorAll('.fit3-ind'),function(b){b.addEventListener('click',function(){setInd(b.getAttribute('data-ind'));if(cur==='difference')show('bookkeeping');});});
+  (function(){var svg=root.querySelector('.fit3-svg'),ns='http://www.w3.org/2000/svg',g=document.createElementNS(ns,'g');g.setAttribute('class','fit3-hits');var E=6;
+    [].forEach.call(root.querySelectorAll('.fit3-layer'),function(l){var poly=l.querySelector('polygon'),k=l.getAttribute('data-key');if(!poly)return;
+      var p=poly.getAttribute('points').trim().split(/\s+/).map(function(q){var a=q.split(',');return [parseFloat(a[0]),parseFloat(a[1])];});
+      var top=k==='difference'?null:true,t=p[0][1],b=p[p.length-1][1],h=b-t;
+      var sl=function(a,c){return (c[0]-a[0])/(c[1]-a[1]);};
+      var tl=p[0],tr=p[1],br=p[2],bl=p[3],pts;
+      if(k==='difference'){var ap=p[0],r=p[1],lf=p[2];var s2=(r[0]-ap[0])/(r[1]-ap[1]);pts=[ap,[r[0]+s2*E,r[1]+E],[lf[0]-s2*E,lf[1]+E]];}
+      else{var sr=sl(tr,br),sL=sl(tl,bl);pts=[[tl[0]-sL*E,tl[1]-E],[tr[0]-sr*E,tr[1]-E],[br[0]+sr*E,br[1]+E],[bl[0]+sL*E,bl[1]+E]];}
+      var hp=document.createElementNS(ns,'polygon');hp.setAttribute('points',pts.map(function(q){return q[0].toFixed(1)+','+q[1].toFixed(1);}).join(' '));hp.setAttribute('data-key',k);hp.setAttribute('class','fit3-hit');
+      ['mouseenter','click'].forEach(function(ev){hp.addEventListener(ev,function(){show(k);});});g.appendChild(hp);});
+    svg.appendChild(g);})();
   setInd('building');
 })();
 </script>
