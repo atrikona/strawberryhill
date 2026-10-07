@@ -521,3 +521,39 @@ body.theme .svc-tab .svc-badge{white-space:nowrap;}
 body.theme .svc-tab{padding:11px 24px 10px;}
 body.theme .svc-explore{padding-top:26px;}
 }
+
+/* ---- round 3: cleaner tabs, calmer pyramid ---- */
+@media(min-width:1001px){
+body.theme .svc-tabs{justify-content:stretch;}
+body.theme .svc-tab{flex:1 1 0;align-content:center;padding:0 28px;min-height:64px;}
+body.theme .svc-tab .n{font-size:1.4rem;}
+body.theme .svc-tab .l{font-size:.86rem;margin-top:4px;}
+body.theme .svc-tool{min-height:480px;}
+body.theme .svc-panels{display:flex;flex-direction:column;justify-content:center;}
+body.theme .svc-panel{padding:34px 48px;}
+}
+body.theme .svc-fit{background:linear-gradient(160deg,#0B1B33 0%,#16305A 60%,#244A82 100%);}
+body.theme .svc-fit::before{display:none;}
+body.theme .svc-fit h2{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;}
+body.theme .svc-fit .pg-kicker{letter-spacing:.2em;}
+body.theme .fit3{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px;}
+body.theme .fit3-svg{max-width:680px;max-height:none;}
+body.theme .fit3-layer{filter:none;}
+body.theme .fit3-layer polygon{stroke:rgba(255,255,255,.25);}
+body.theme .fit3-layer .ln{font-size:19px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+body.theme .fit3-layer.on{transform:translateY(-6px);filter:drop-shadow(0 12px 14px rgba(0,0,0,.35));}
+body.theme .fit3-layer[data-key=advisory].on{filter:drop-shadow(0 12px 14px rgba(0,0,0,.35));}
+body.theme .fit3-layer.dim{opacity:.55;}
+body.theme .fit3-br .bl{letter-spacing:.16em;}
+body.theme .fit3-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:6px;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:0 20px 44px -22px rgba(0,0,0,.5);}
+body.theme .fit3-card h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;}
+body.theme .fit3-tag{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3);color:#fff;}
+body.theme .fit3-lab{letter-spacing:.18em;}
+@media(max-width:1000px){body.theme .fit3-layer .ln{font-size:22px;}}
+@media(min-width:1001px){
+body.theme .svc-tab .n{font-size:1.3rem;}
+body.theme .svc-tab{padding:0 24px;column-gap:7px;}
+body.theme .svc-tab .svc-badge{padding:2px 8px;letter-spacing:.1em;}
+body.theme .svc-tool{min-height:440px;}
+}
+body.theme .fit3-layer.dim{opacity:.72;}
